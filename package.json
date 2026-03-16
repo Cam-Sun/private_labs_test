@@ -1,0 +1,18 @@
+{
+  "name": "swag-labs-cucumber-tests",
+  "version": "1.0.0",
+  "description": "Cucumber BDD tests for Swag Labs (Sauce Labs sample app)",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "test:login": "cucumber-js features/login.feature",
+    "test:inventory": "cucumber-js features/inventory.feature",
+    "test:cart": "cucumber-js features/cart.feature",
+    "test:checkout": "cucumber-js features/checkout.feature"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.44.0",
+    "playwright": "^1.44.0"
+  }
+}
